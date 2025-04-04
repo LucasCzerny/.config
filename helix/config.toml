@@ -1,0 +1,25 @@
+theme = "tokyonight"
+
+[keys.insert]
+C-s = ["normal_mode", "commit_undo_checkpoint", ":write"] 
+
+[keys.normal]
+X = "select_line_above"
+C-s = ["normal_mode", "commit_undo_checkpoint", ":write"] 
+
+[keys.select]
+X = "select_line_above"
+
+[editor]
+line-number = "relative"
+mouse = false
+bufferline = "never"
+end-of-line-diagnostics = "hint"
+gutters = ["diagnostics", "line-numbers", "spacer"]
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[editor.auto-save]
+after-delay.enable = true
+after-delay.timeout = 1000

@@ -1,0 +1,23 @@
+# initial cwd
+working-directory = /home/lucas/Documents/Code
+
+# drip
+theme = light:tokyonight-day,dark:tokyonight
+
+# nice integration
+mouse-hide-while-typing = true
+window-padding-balance = true
+window-padding-color = extend
+auto-update = download
+
+# font
+font-family = DepartureMono Nerd Font Mono
+window-inherit-font-size = false
+window-step-resize = true
+font-size = 14
+
+# maybe use tmux idk
+command = tmux
+
+# tab keybinds
+keybind = alt+a=new_tab
