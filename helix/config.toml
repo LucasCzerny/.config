@@ -6,6 +6,8 @@ C-s = ["normal_mode", "commit_undo_checkpoint", ":write"]
 [keys.normal]
 X = "select_line_above"
 C-s = ["normal_mode", "commit_undo_checkpoint", ":write"] 
+C-j = ["goto_next_paragraph"]
+C-k = ["goto_prev_paragraph"]
 
 [keys.select]
 X = "select_line_above"
@@ -23,3 +25,6 @@ cursor-line = "error"
 [editor.auto-save]
 after-delay.enable = true
 after-delay.timeout = 1000
+
+[editor.soft-wrap]
+enable = true
