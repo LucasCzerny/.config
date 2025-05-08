@@ -1,3 +1,4 @@
-# vendor/
-# shared/
+vendor/
+shared/
+scripts/
 ols.json

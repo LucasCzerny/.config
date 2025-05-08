@@ -3,6 +3,7 @@ working-directory = /home/lucas/Documents/Code
 
 # drip
 theme = light:tokyonight-day,dark:tokyonight
+fullscreen = true
 
 # nice integration
 mouse-hide-while-typing = true
@@ -12,9 +13,7 @@ auto-update = download
 
 # font
 font-family = 0xProto Nerd Font
+font-feature=-calt, -liga, -dlig
 window-inherit-font-size = false
 window-step-resize = true
 font-size = 14
-
-# tab keybinds
-keybind = alt+a=new_tab
