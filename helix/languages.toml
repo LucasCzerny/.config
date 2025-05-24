@@ -1,5 +1,12 @@
+[language-server]
+vscode-html-language-server = { command = "vscode-html-language-server", args = ["--stdio"], config = {  provideFormatter = true, html = {  format = {  unformattedContentDelimiter = "<!-- noformat -->"  }  }  } }
+
 [[language]]
-name = "riscv"
-scope = "riscv.source"
-file-types = ["s"]
-indent = { tab-width = 4, unit = "    " }
+name = "html"
+scope = "text.html.basic"
+injection-regex = "html"
+file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "cshtml"]
+block-comment-tokens = { start = "<!--", end = "-->" }
+language-servers = [ "vscode-html-language-server", "superhtml" ]
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
