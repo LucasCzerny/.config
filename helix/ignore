@@ -1,4 +1,5 @@
 vendor/
 shared/
+models/
 scripts/
 ols.json
