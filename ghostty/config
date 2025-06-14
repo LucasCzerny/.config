@@ -2,7 +2,7 @@
 working-directory = /home/lucas/Documents/Code
 
 # drip
-theme = light:tokyonight-day,dark:tokyonight
+theme = rose-pine-moon
 fullscreen = true
 
 # nice integration

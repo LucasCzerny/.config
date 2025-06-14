@@ -1,4 +1,4 @@
-theme = "tokyonight"
+theme = "rose_pine_moon"
 
 [keys.insert]
 C-s = ["normal_mode", "commit_undo_checkpoint", ":write"]
@@ -8,20 +8,28 @@ X = "select_line_above"
 C-s = ["normal_mode", "commit_undo_checkpoint", ":write"] 
 C-j = ["goto_next_paragraph"]
 C-k = ["goto_prev_paragraph"]
-C-x = []
-C-e = ["increment"]
 C-a = []
+C-e = ["increment"]
+C-x = [":buffer-close"] # used to be decrement
 C-r = ["decrement"]
+C-n = "@x/[1-9]<ret>"
+C-h = "jump_view_left"
+C-l = "jump_view_right"
+C-H = "swap_view_left"
+C-L = "swap_view_right"
+"A-(" = "@f(mi("
+"A-{" = "@f{mi{"
 
 [keys.select]
 X = "select_line_above"
 C-j = ["goto_next_paragraph"]
 C-k = ["goto_prev_paragraph"]
+";" = ["collapse_selection", "normal_mode"]
 
 [editor]
 line-number = "relative"
 mouse = false
-bufferline = "never"
+bufferline = "always"
 end-of-line-diagnostics = "hint"
 # gutters = ["diagnostics", "line-numbers", "spacer"]
 
